@@ -6,7 +6,7 @@ class Form extends Component {
     super();
     this.state = {
       value : '',
-      passPhrase : ''
+      secretPhrase : ''
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -14,7 +14,7 @@ class Form extends Component {
   }
 
   handleChange(event) {
-   this.setState({value: event.target.value});
+   this.setState({value: event.target.value, secretPhrase: event.targer.secretPhrase});
  }
  handleSubmit(event) {
      alert('A name was submitted: ' + this.state.value);
@@ -27,6 +27,10 @@ class Form extends Component {
          <label>
            Group Name:
            <input type="text" value={this.state.value} onChange={this.handleChange} />
+         </label>
+         <label>
+           Secret Phrase:
+           <input type="text" value={this.state.secretPhrase} onChange={this.handleChange} />
          </label>
          <input type="submit" value="Submit" />
        </form>

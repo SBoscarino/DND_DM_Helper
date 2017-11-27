@@ -10,7 +10,9 @@ class Main extends Component {
         <header className="App-header">
           <h1 className="App-title">Main Page</h1>
         </header>
+
         <Form />
+        
         <p className="App-intro">
           This is where the info will go.
         </p>
