@@ -11,8 +11,8 @@ class Main extends Component {
           <h1 className="App-title">Main Page</h1>
         </header>
 
-        <Form />
-        
+        <Login />
+
         <p className="App-intro">
           This is where the info will go.
         </p>

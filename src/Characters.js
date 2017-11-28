@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-//Form Handler
-class Form extends Component {
+//this is the login page
+class Login extends Component {
   constructor() {
     super();
     this.state = {
@@ -38,4 +38,4 @@ class Form extends Component {
    }
  }
 
-export default Form;
+export default Login;
